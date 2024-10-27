@@ -1,6 +1,7 @@
 /* eslint-disable no-prototype-builtins */
 import { type ClassValue, clsx } from "clsx";
 import { twMerge } from "tailwind-merge";
+import { z } from "zod";
 
 /**
  * Combines class names using clsx and merges Tailwind classes.
@@ -49,3 +50,12 @@ export function generateUUID(): string {
     return v.toString(16);
   });
 }
+
+export const authFormSchema = (type: string) => z.object({
+  // sign up
+  userName: type === 'sign-in' ? z.string().optional() : z.string().min(3),
+  phoneNumber: type === 'sign-in' ? z.string().optional() : z.string().min(10),
+  // both
+  email: z.string().email(),
+  password: z.string().min(8),
+})

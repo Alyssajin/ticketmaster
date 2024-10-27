@@ -42,8 +42,8 @@ const SearchBar = () => {
         <section className='searchbar'>
             <div className='dDDZYu search-bar-block'>
                 <Form {...form}>
-                    <form onSubmit={form.handleSubmit(onSubmit)} className='gXDJCk'>
-                        <div className='searchbar-left WgAPW'>
+                    <form onSubmit={form.handleSubmit(onSubmit)} className='gXDJCk flex-wrap'>
+                        <div className='w-5 searchbar-left WgAPW'>
                             <div className='search-city eshrpI'>
                                 <div className='bRfViD'>
                                     <div className='hheYrZ'>
@@ -60,7 +60,7 @@ const SearchBar = () => {
                         </div>
 
                         <div className='searchbar-right'>
-                            <input type="text" className='text-gray-500' placeholder='Search by Artist or Event' {...form.register('search')} />
+                            <input type="text" className='text-gray-500 ml-3' placeholder='Search by Artist or Event' {...form.register('search')} />
                             <div>
                                 <Button type="submit" className="indexstyles__StyledButton-sc-83qv1q-0 jdbotF sc-j3o02m-11 brqMlp"><span className="indexstyles__FlexWrapper-sc-83qv1q-1 kCQEIv"><span className="indexstyles__Text-sc-83qv1q-2 jHTUWf">Search</span></span></Button>
                             </div>

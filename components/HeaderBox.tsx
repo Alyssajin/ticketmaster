@@ -1,5 +1,6 @@
 import React from 'react'
 import SearchBar from './SearchBar'
+import { Carter_One } from 'next/font/google'
 
 const HeaderBox = ({ type, user }: HeaderBoxProps) => {
   return (
@@ -10,7 +11,10 @@ const HeaderBox = ({ type, user }: HeaderBoxProps) => {
           <button title='English' className='jhHFnw'>EN</button>
         </div>
         <div className='iPKGhh'>
-          <a href="./" className='cRTXTe'>Help</a>
+          {user ? (<a href="./cart" className='cRTXTe'>Cart </a>
+          ) : (
+            <a href="./" className='cRTXTe'>Cart </a>
+          )}
         </div>
         <div className='glzYUk'>
           <a href="https://www.paypal.com/ca/webapps/mpp/paypal-popup">

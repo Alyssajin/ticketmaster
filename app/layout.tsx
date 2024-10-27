@@ -9,8 +9,8 @@ const ibmPlexSerif = IBM_Plex_Serif({ subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
-  title: "Horizon", 
-  description: "Horizon is a modern banking platform for the future",
+  title: "Ticket Master", 
+  description: "Ticket Master is a ticketing platform for events.",
   icons: {
     icon: '/icons/logo.svg',
   }

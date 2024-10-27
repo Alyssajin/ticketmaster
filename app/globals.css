@@ -558,13 +558,13 @@ button {
   }
 
   .jdbotF {
-    margin: initial;
+    margin: 5px;
     border: 1px solid transparent;
     font-family: inherit;
     line-height: inherit;
     letter-spacing: inherit;
     text-transform: inherit;
-    padding: 8px 24px;
+    padding: 5px 24px;
     color: rgb(255, 255, 255);
     background-color: rgb(2, 77, 223);
     display: inline-block;
